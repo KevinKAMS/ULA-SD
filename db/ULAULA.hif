@@ -1,0 +1,583 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+symbols|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+4BitsFullAdder
+# storage
+db|ULAULA.(1).cnf
+db|ULAULA.(1).cnf
+# case_insensitive
+# source_file
+diagrams|4bitsfulladder.bdf
+6c80518df9116a83564adea32d56fe26
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst
+ULA:inst|AmaisB:inst|4BitsFullAdder:inst
+}
+# macro_sequence
+
+# end
+# entity
+SomadorCompleto
+# storage
+db|ULAULA.(2).cnf
+db|ULAULA.(2).cnf
+# case_insensitive
+# source_file
+diagrams|somadorcompleto.bdf
+25bbb03a8a10e7e167d38bd22ac3a3b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst4
+ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst2
+ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst1
+ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst
+ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst4
+ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst2
+ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst1
+ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst
+}
+# macro_sequence
+
+# end
+# entity
+SeletorComplemento
+# storage
+db|ULAULA.(3).cnf
+db|ULAULA.(3).cnf
+# case_insensitive
+# source_file
+diagrams|seletorcomplemento.bdf
+59c53c724a69be5dc7f4d66b69f61c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AmenosB:inst1|AmaisB:inst|SeletorComplemento:inst4
+ULA:inst|AmenosB:inst1|AmaisB:inst|SeletorComplemento:inst8
+ULA:inst|AmaisB:inst|SeletorComplemento:inst4
+ULA:inst|AmaisB:inst|SeletorComplemento:inst8
+}
+# macro_sequence
+
+# end
+# entity
+ComplementoDeDois
+# storage
+db|ULAULA.(4).cnf
+db|ULAULA.(4).cnf
+# case_insensitive
+# source_file
+diagrams|complementodedois.bdf
+cc492e2727c411b45d4cec8b933eb0
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|ComplementoDeDois:inst2
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComplementoDeDois:inst2
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComplementoDeDois:inst5
+ULA:inst|AmaisB:inst|ComplementoDeDois:inst2
+ULA:inst|AmaisB:inst|ComplementoDeDois:inst5
+}
+# macro_sequence
+
+# end
+# entity
+AXORB
+# storage
+db|ULAULA.(5).cnf
+db|ULAULA.(5).cnf
+# case_insensitive
+# source_file
+diagrams|axorb.bdf
+b59de9a624275a49ab57e2b90de3e50
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|5bitsAXORB:inst8|AXORB:inst4
+ULA:inst|5bitsAXORB:inst8|AXORB:inst
+ULA:inst|5bitsAXORB:inst8|AXORB:inst1
+ULA:inst|5bitsAXORB:inst8|AXORB:inst2
+ULA:inst|5bitsAXORB:inst8|AXORB:inst3
+ULA:inst|AmenosB:inst1|AmaisB:inst|AXORB:inst3
+ULA:inst|AmaisB:inst|AXORB:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Mux2para1
+# storage
+db|ULAULA.(6).cnf
+db|ULAULA.(6).cnf
+# case_insensitive
+# source_file
+diagrams|mux2para1.bdf
+262fc383bc8a8f9b2f81a2edb95b17
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|MaiorQue:inst4|Mux2para1:inst14
+ULA:inst|MaiorQue:inst4|Mux2para1:inst15
+ULA:inst|MenorQue:inst5|Mux2para1:inst14
+ULA:inst|MenorQue:inst5|Mux2para1:inst15
+ULA:inst|aequalsb:inst3|Mux2para1:inst14
+ULA:inst|aequalsb:inst3|Mux2para1:inst15
+ULA:inst|AmenosB:inst1|AmaisB:inst|Mux2para1:inst15
+ULA:inst|AmenosB:inst1|AmaisB:inst|Mux2para1:inst10
+ULA:inst|AmenosB:inst1|AmaisB:inst|Mux2para1:inst7
+ULA:inst|AmaisB:inst|Mux2para1:inst15
+ULA:inst|AmaisB:inst|Mux2para1:inst10
+ULA:inst|AmaisB:inst|Mux2para1:inst7
+Mux2para1:inst14
+Mux2para1:inst15
+}
+# macro_sequence
+
+# end
+# entity
+ComparaMagnitude
+# storage
+db|ULAULA.(7).cnf
+db|ULAULA.(7).cnf
+# case_insensitive
+# source_file
+diagrams|comparamagnitude.bdf
+28c5aa9f4358feede1685e8b80dc668e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8
+ULA:inst|MenorQue:inst5|ComparaMagnitude:inst8
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComparaMagnitude:inst6
+ULA:inst|AmaisB:inst|ComparaMagnitude:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Comparador2Bits
+# storage
+db|ULAULA.(8).cnf
+db|ULAULA.(8).cnf
+# case_insensitive
+# source_file
+diagrams|comparador2bits.bdf
+111b22b8a1d4b9131254b957d9d8a96
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8|Comparador2Bits:inst3
+ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8|Comparador2Bits:inst2
+ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8|Comparador2Bits:inst1
+ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8|Comparador2Bits:inst
+ULA:inst|MenorQue:inst5|ComparaMagnitude:inst8|Comparador2Bits:inst3
+ULA:inst|MenorQue:inst5|ComparaMagnitude:inst8|Comparador2Bits:inst2
+ULA:inst|MenorQue:inst5|ComparaMagnitude:inst8|Comparador2Bits:inst1
+ULA:inst|MenorQue:inst5|ComparaMagnitude:inst8|Comparador2Bits:inst
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst3
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst2
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst1
+ULA:inst|AmenosB:inst1|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst
+ULA:inst|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst3
+ULA:inst|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst2
+ULA:inst|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst1
+ULA:inst|AmaisB:inst|ComparaMagnitude:inst6|Comparador2Bits:inst
+}
+# macro_sequence
+
+# end
+# entity
+ULA
+# storage
+db|ULAULA.(10).cnf
+db|ULAULA.(10).cnf
+# case_insensitive
+# source_file
+diagrams|ula.bdf
+c6b13ad7704e15eba31565c56e7bc288
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst
+}
+# macro_sequence
+
+# end
+# entity
+DecoderComplemento
+# storage
+db|ULAULA.(14).cnf
+db|ULAULA.(14).cnf
+# case_insensitive
+# source_file
+diagrams|decodercomplemento.bdf
+7a6d3d21ffc5153f6c22c51c6272527a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|DecoderComplemento:inst27
+}
+# macro_sequence
+
+# end
+# entity
+DecoderXor
+# storage
+db|ULAULA.(15).cnf
+db|ULAULA.(15).cnf
+# case_insensitive
+# source_file
+diagrams|decoderxor.bdf
+a825538c32b0eaaa49ce4cbe4b85e4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|DecoderXor:inst37
+}
+# macro_sequence
+
+# end
+# entity
+5bitsAXORB
+# storage
+db|ULAULA.(16).cnf
+db|ULAULA.(16).cnf
+# case_insensitive
+# source_file
+diagrams|5bitsaxorb.bdf
+3c7478e372a17a12d2cd362c50db352a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|5bitsAXORB:inst8
+}
+# macro_sequence
+
+# end
+# entity
+DecoderAandB
+# storage
+db|ULAULA.(17).cnf
+db|ULAULA.(17).cnf
+# case_insensitive
+# source_file
+diagrams|decoderaandb.bdf
+37d09c96cefbdd56e603a99936b1ad3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|DecoderAandB:inst6
+}
+# macro_sequence
+
+# end
+# entity
+AB
+# storage
+db|ULAULA.(18).cnf
+db|ULAULA.(18).cnf
+# case_insensitive
+# source_file
+diagrams|ab.bdf
+ac904a65ce2541b29267e07c28ea3016
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AB:inst7
+}
+# macro_sequence
+
+# end
+# entity
+DecoderSubtracao
+# storage
+db|ULAULA.(19).cnf
+db|ULAULA.(19).cnf
+# case_insensitive
+# source_file
+diagrams|decodersubtracao.bdf
+475c4a1f2c2084e361161a4719238c50
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|DecoderSubtracao:inst26
+}
+# macro_sequence
+
+# end
+# entity
+AmenosB
+# storage
+db|ULAULA.(20).cnf
+db|ULAULA.(20).cnf
+# case_insensitive
+# source_file
+diagrams|amenosb.bdf
+4091a62e7aa36ac56aa11faf148c67f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AmenosB:inst1
+}
+# macro_sequence
+
+# end
+# entity
+DecoderSoma
+# storage
+db|ULAULA.(21).cnf
+db|ULAULA.(21).cnf
+# case_insensitive
+# source_file
+diagrams|decodersoma.bdf
+b4fd3831f9a898c72d1244b2db7daec
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|DecoderSoma:inst25
+}
+# macro_sequence
+
+# end
+# entity
+Display14
+# storage
+db|ULAULA.(22).cnf
+db|ULAULA.(22).cnf
+# case_insensitive
+# source_file
+diagrams|display14.bdf
+3d8e3bab91bcb53a0b1e2dee1eb1834
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Display14:inst3
+Display14:inst1
+Display14:inst2
+}
+# macro_sequence
+
+# end
+# entity
+DisplayDezena
+# storage
+db|ULAULA.(23).cnf
+db|ULAULA.(23).cnf
+# case_insensitive
+# source_file
+diagrams|displaydezena.bdf
+1924fd2b681dae76c57da3b5b261201a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Display14:inst3|DisplayDezena:inst
+Display14:inst1|DisplayDezena:inst
+Display14:inst2|DisplayDezena:inst
+}
+# macro_sequence
+
+# end
+# entity
+AmaisB
+# storage
+db|ULAULA.(11).cnf
+db|ULAULA.(11).cnf
+# case_insensitive
+# source_file
+diagrams|amaisb.bdf
+2c5a1c67952ee6e559ce2cc7e41edf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|AmenosB:inst1|AmaisB:inst
+ULA:inst|AmaisB:inst
+}
+# macro_sequence
+
+# end
+# entity
+DisplayUnidade
+# storage
+db|ULAULA.(24).cnf
+db|ULAULA.(24).cnf
+# case_insensitive
+# source_file
+diagrams|displayunidade.bdf
+3cf3d63b1c2b4dec1323525d9ed8aa23
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Display14:inst3|DisplayUnidade:inst1
+Display14:inst1|DisplayUnidade:inst1
+Display14:inst2|DisplayUnidade:inst1
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQue
+# storage
+db|ULAULA.(0).cnf
+db|ULAULA.(0).cnf
+# case_insensitive
+# source_file
+diagrams|maiorque.bdf
+771f3e499eee253f384774c25d11
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|MaiorQue:inst4
+}
+# macro_sequence
+
+# end
+# entity
+MenorQue
+# storage
+db|ULAULA.(12).cnf
+db|ULAULA.(12).cnf
+# case_insensitive
+# source_file
+diagrams|menorque.bdf
+a136d09b3e5b11a44954ce74a9aa850
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|MenorQue:inst5
+}
+# macro_sequence
+
+# end
+# entity
+aequalsb
+# storage
+db|ULAULA.(13).cnf
+db|ULAULA.(13).cnf
+# case_insensitive
+# source_file
+diagrams|aequalsb.bdf
+7a85918fd3c013cb48a149fbe78ce3eb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ULA:inst|aequalsb:inst3
+}
+# macro_sequence
+
+# end
+# entity
+FinalULAULA
+# storage
+db|ULAULA.(9).cnf
+db|ULAULA.(9).cnf
+# case_insensitive
+# source_file
+diagrams|finalulaula.bdf
+8aa64b93724de172ab1d07b172a622e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

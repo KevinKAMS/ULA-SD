@@ -1,0 +1,195 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 12:06:38  April 23, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ULAULA_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY FinalULAULA
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:06:38  APRIL 23, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name LL_ROOT_REGION ON -entity ULAULA -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ULAULA -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name LL_ROOT_REGION ON -entity 5bitsXOR -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity 5bitsXOR -section_id "Root Region"
+set_global_assignment -name LL_ROOT_REGION ON -entity AequalsB -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity AequalsB -section_id "Root Region"
+set_global_assignment -name LL_ROOT_REGION ON -entity DisplayDezena -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity DisplayDezena -section_id "Root Region"
+set_global_assignment -name LL_ROOT_REGION ON -entity Comparador -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -entity Comparador -section_id "Root Region"
+set_global_assignment -name BDF_FILE Diagrams/DisplayUnidade.bdf
+set_global_assignment -name BDF_FILE Diagrams/Comparador2Bits.bdf
+set_global_assignment -name BDF_FILE Diagrams/ComplementoDeDois.bdf
+set_global_assignment -name BDF_FILE "Diagrams/A AND B.bdf"
+set_global_assignment -name BDF_FILE Diagrams/teste.bdf
+set_global_assignment -name BDF_FILE Diagrams/AB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/AB.vwf
+set_global_assignment -name BDF_FILE Diagrams/AXORB.bdf
+set_global_assignment -name BDF_FILE Diagrams/5bitsAXORB.bdf
+set_global_assignment -name BDF_FILE Testes/5bitsXOR.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/AXORB.vwf
+set_global_assignment -name BDF_FILE Diagrams/aequalsb.bdf
+set_global_assignment -name BDF_FILE Testes/5bitsAequalsB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/AequalsB.vwf
+set_global_assignment -name BDF_FILE Diagrams/DisplayDezena.bdf
+set_global_assignment -name BDF_FILE Testes/2bitsComparador.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/2bitsComparadorAB.vwf
+set_global_assignment -name BDF_FILE Testes/CompDeDois.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/Complementa2.vwf
+set_global_assignment -name BDF_FILE Diagrams/AMaiorQueB.bdf
+set_global_assignment -name BDF_FILE Diagrams/ComparaMagnitude.bdf
+set_global_assignment -name BDF_FILE Testes/ComparaMagnitude.bdf
+set_global_assignment -name BDF_FILE Testes/Comparador.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/ComparadorMag.vwf
+set_global_assignment -name BDF_FILE Diagrams/barramento_default.bdf
+set_global_assignment -name BDF_FILE Diagrams/MaiorQue.bdf
+set_global_assignment -name BDF_FILE Testes/AmaiorqB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/MaiorQue.vwf
+set_global_assignment -name BDF_FILE Diagrams/MenorQue.bdf
+set_global_assignment -name BDF_FILE Diagrams/SomadorCompleto.bdf
+set_global_assignment -name BDF_FILE Testes/SomaCompleto.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/FullAdder.vwf
+set_global_assignment -name BDF_FILE Testes/Display14Segments.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/Display14Segments.vwf
+set_global_assignment -name BDF_FILE Diagrams/4BitsFullAdder.bdf
+set_global_assignment -name BDF_FILE Testes/Adder4Bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/4BitsAdder.vwf
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS ON
+set_global_assignment -name BDF_FILE Diagrams/AmaisB.bdf
+set_global_assignment -name BDF_FILE Diagrams/SeletorComplemento.bdf
+set_global_assignment -name BDF_FILE Diagrams/Mux2para1.bdf
+set_global_assignment -name BDF_FILE Testes/AplusB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/AmaisB.vwf
+set_global_assignment -name BDF_FILE Diagrams/TrataSinalSubtracao.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/TrataSinalSubtracao.vwf
+set_global_assignment -name SEARCH_PATH symbols
+set_global_assignment -name BDF_FILE Diagrams/AmenosB.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform/AmenosB.vwf
+set_global_assignment -name BDF_FILE Diagrams/ULA.bdf
+set_global_assignment -name BDF_FILE Diagrams/DecoderSoma.bdf
+set_global_assignment -name BDF_FILE Diagrams/DecoderSubtracao.bdf
+set_global_assignment -name BDF_FILE Diagrams/DecoderComplemento.bdf
+set_global_assignment -name BDF_FILE Diagrams/DecoderMaiorQue.bdf
+set_global_assignment -name BDF_FILE Diagrams/DecoderXor.bdf
+set_global_assignment -name BDF_FILE Diagrams/FinalULAULA.bdf
+set_global_assignment -name BDF_FILE Diagrams/DecoderAandB.bdf
+set_global_assignment -name BDF_FILE Diagrams/Display14.bdf
+set_global_assignment -name MISC_FILE "C:/Users/kams/Downloads/ULAULA/ULAULA.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_Y24 -to a0
+set_location_assignment PIN_AA22 -to a1
+set_location_assignment PIN_AA23 -to a2
+set_location_assignment PIN_AA24 -to a3
+set_location_assignment PIN_AB24 -to b0
+set_location_assignment PIN_AC24 -to b1
+set_location_assignment PIN_AB25 -to b2
+set_location_assignment PIN_AC25 -to b3
+set_location_assignment PIN_Y23 -to SignalA
+set_location_assignment PIN_AB23 -to SignalB
+set_location_assignment PIN_AB28 -to Sel0
+set_location_assignment PIN_AC28 -to Sel1
+set_location_assignment PIN_AC27 -to Sel2
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
+set_location_assignment PIN_E21 -to LEDTrueFalse
+set_location_assignment PIN_G21 -to Led0
+set_location_assignment PIN_G22 -to Led1
+set_location_assignment PIN_G20 -to Led2
+set_location_assignment PIN_H21 -to Led3
+set_location_assignment PIN_E24 -to Led4
+set_location_assignment PIN_M24 -to aDez
+set_location_assignment PIN_G18 -to aUn
+set_location_assignment PIN_Y22 -to bDez
+set_location_assignment PIN_W21 -to cDez
+set_location_assignment PIN_W22 -to dDez
+set_location_assignment PIN_W25 -to eDez
+set_location_assignment PIN_U23 -to fDez
+set_location_assignment PIN_U24 -to gDez
+set_location_assignment PIN_W28 -to LedSinalSaida
+set_location_assignment PIN_F22 -to bUn
+set_location_assignment PIN_E17 -to cUn
+set_location_assignment PIN_L26 -to dUn
+set_location_assignment PIN_L25 -to eUn
+set_location_assignment PIN_J22 -to fUn
+set_location_assignment PIN_H22 -to gUn
+set_location_assignment PIN_E25 -to LedIN1
+set_location_assignment PIN_E22 -to LedIN2
+set_location_assignment PIN_AD18 -to IN2aDez
+set_location_assignment PIN_AB19 -to IN2aUn
+set_location_assignment PIN_AC18 -to IN2bDez
+set_location_assignment PIN_AA19 -to IN2bUn
+set_location_assignment PIN_AB18 -to IN2cDez
+set_location_assignment PIN_AG21 -to IN2cUn
+set_location_assignment PIN_AH19 -to IN2dDez
+set_location_assignment PIN_AH21 -to IN2dUn
+set_location_assignment PIN_AG19 -to IN2eDez
+set_location_assignment PIN_AE19 -to IN2eUn
+set_location_assignment PIN_AF18 -to IN2fDez
+set_location_assignment PIN_AF19 -to IN2fUn
+set_location_assignment PIN_AH18 -to IN2gDez
+set_location_assignment PIN_AE18 -to IN2gUn
+set_location_assignment PIN_AD17 -to INaDez
+set_location_assignment PIN_AA17 -to INaUn
+set_location_assignment PIN_AE17 -to INbDez
+set_location_assignment PIN_AB16 -to INbUn
+set_location_assignment PIN_AG17 -to INcDez
+set_location_assignment PIN_AA16 -to INcUn
+set_location_assignment PIN_AH17 -to INdDez
+set_location_assignment PIN_AB17 -to INdUn
+set_location_assignment PIN_AF17 -to INeDez
+set_location_assignment PIN_AB15 -to INeUn
+set_location_assignment PIN_AG18 -to INfDez
+set_location_assignment PIN_AA15 -to INfUn
+set_location_assignment PIN_AA14 -to INgDez
+set_location_assignment PIN_AC17 -to INgUn
+set_global_assignment -name MISC_FILE "C:/Users/kams/Desktop/ULAULA BKP/ULAULA.dpf"
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Waveforms Relatório/ULAULA.vwf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE "Waveforms Relatório/Display.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Waveform/AmaisB.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name MISC_FILE "C:/Users/hscs/Downloads/ULAULAFINAL/ULAULA.dpf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

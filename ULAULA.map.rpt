@@ -1,0 +1,426 @@
+Analysis & Synthesis report for ULAULA
+Fri May 05 12:13:05 2017
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri May 05 12:13:05 2017        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; ULAULA                                       ;
+; Top-level Entity Name              ; FinalULAULA                                  ;
+; Family                             ; Cyclone IV E                                 ;
+; Total logic elements               ; 146                                          ;
+;     Total combinational functions  ; 146                                          ;
+;     Dedicated logic registers      ; 0                                            ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 64                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; FinalULAULA        ; ULAULA             ;
+; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+
+; Diagrams/DisplayUnidade.bdf      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DisplayUnidade.bdf     ;
+; Diagrams/Comparador2Bits.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/Comparador2Bits.bdf    ;
+; Diagrams/ComplementoDeDois.bdf   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/ComplementoDeDois.bdf  ;
+; Diagrams/AB.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/AB.bdf                 ;
+; Diagrams/AXORB.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/AXORB.bdf              ;
+; Diagrams/5bitsAXORB.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/5bitsAXORB.bdf         ;
+; Diagrams/aequalsb.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/aequalsb.bdf           ;
+; Diagrams/DisplayDezena.bdf       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DisplayDezena.bdf      ;
+; Diagrams/ComparaMagnitude.bdf    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/ComparaMagnitude.bdf   ;
+; Diagrams/MaiorQue.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/MaiorQue.bdf           ;
+; Diagrams/MenorQue.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/MenorQue.bdf           ;
+; Diagrams/SomadorCompleto.bdf     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/SomadorCompleto.bdf    ;
+; Diagrams/4BitsFullAdder.bdf      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/4BitsFullAdder.bdf     ;
+; Diagrams/AmaisB.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/AmaisB.bdf             ;
+; Diagrams/SeletorComplemento.bdf  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/SeletorComplemento.bdf ;
+; Diagrams/Mux2para1.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/Mux2para1.bdf          ;
+; Diagrams/AmenosB.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/AmenosB.bdf            ;
+; Diagrams/ULA.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/ULA.bdf                ;
+; Diagrams/DecoderSoma.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DecoderSoma.bdf        ;
+; Diagrams/DecoderSubtracao.bdf    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DecoderSubtracao.bdf   ;
+; Diagrams/DecoderComplemento.bdf  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DecoderComplemento.bdf ;
+; Diagrams/DecoderXor.bdf          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DecoderXor.bdf         ;
+; Diagrams/FinalULAULA.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/FinalULAULA.bdf        ;
+; Diagrams/DecoderAandB.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/DecoderAandB.bdf       ;
+; Diagrams/Display14.bdf           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/hscs/Downloads/ULAULAFINAL/Diagrams/Display14.bdf          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+
+
+
++--------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary            ;
++---------------------------------------------+----------+
+; Resource                                    ; Usage    ;
++---------------------------------------------+----------+
+; Estimated Total logic elements              ; 146      ;
+;                                             ;          ;
+; Total combinational functions               ; 146      ;
+; Logic element usage by number of LUT inputs ;          ;
+;     -- 4 input functions                    ; 113      ;
+;     -- 3 input functions                    ; 24       ;
+;     -- <=2 input functions                  ; 9        ;
+;                                             ;          ;
+; Logic elements by mode                      ;          ;
+;     -- normal mode                          ; 146      ;
+;     -- arithmetic mode                      ; 0        ;
+;                                             ;          ;
+; Total registers                             ; 0        ;
+;     -- Dedicated logic registers            ; 0        ;
+;     -- I/O registers                        ; 0        ;
+;                                             ;          ;
+; I/O pins                                    ; 64       ;
+; Maximum fan-out node                        ; b3~input ;
+; Maximum fan-out                             ; 31       ;
+; Total fan-out                               ; 650      ;
+; Average fan-out                             ; 2.37     ;
++---------------------------------------------+----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                           ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+; |FinalULAULA                           ; 146 (1)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 64   ; 0            ; |FinalULAULA                                                                              ; work         ;
+;    |Display14:inst1|                   ; 8 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst1                                                              ; work         ;
+;       |DisplayDezena:inst|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst1|DisplayDezena:inst                                           ; work         ;
+;       |DisplayUnidade:inst1|           ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst1|DisplayUnidade:inst1                                         ; work         ;
+;    |Display14:inst2|                   ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst2                                                              ; work         ;
+;       |DisplayDezena:inst|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst2|DisplayDezena:inst                                           ; work         ;
+;       |DisplayUnidade:inst1|           ; 8 (8)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst2|DisplayUnidade:inst1                                         ; work         ;
+;    |Display14:inst3|                   ; 40 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst3                                                              ; work         ;
+;       |DisplayDezena:inst|             ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst3|DisplayDezena:inst                                           ; work         ;
+;       |DisplayUnidade:inst1|           ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Display14:inst3|DisplayUnidade:inst1                                         ; work         ;
+;    |Mux2para1:inst14|                  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|Mux2para1:inst14                                                             ; work         ;
+;    |ULA:inst|                          ; 87 (46)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst                                                                     ;              ;
+;       |AmaisB:inst|                    ; 14 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst                                                         ;              ;
+;          |4BitsFullAdder:inst|         ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst|4BitsFullAdder:inst                                     ;              ;
+;             |SomadorCompleto:inst1|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst1               ;              ;
+;             |SomadorCompleto:inst2|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst2               ;              ;
+;             |SomadorCompleto:inst4|    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst4               ;              ;
+;          |Mux2para1:inst15|            ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst|Mux2para1:inst15                                        ;              ;
+;          |SeletorComplemento:inst4|    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmaisB:inst|SeletorComplemento:inst4                                ;              ;
+;       |AmenosB:inst1|                  ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1                                                       ;              ;
+;          |AmaisB:inst|                 ; 14 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst                                           ;              ;
+;             |4BitsFullAdder:inst|      ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst                       ;              ;
+;                |SomadorCompleto:inst1| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst1 ;              ;
+;                |SomadorCompleto:inst2| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst2 ;              ;
+;                |SomadorCompleto:inst4| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst4 ;              ;
+;             |ComplementoDeDois:inst5|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst|ComplementoDeDois:inst5                   ;              ;
+;             |SeletorComplemento:inst4| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|AmenosB:inst1|AmaisB:inst|SeletorComplemento:inst4                  ;              ;
+;       |DecoderSoma:inst25|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|DecoderSoma:inst25                                                  ;              ;
+;       |DecoderSubtracao:inst26|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|DecoderSubtracao:inst26                                             ;              ;
+;       |MaiorQue:inst4|                 ; 7 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|MaiorQue:inst4                                                      ;              ;
+;          |ComparaMagnitude:inst8|      ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8                               ;              ;
+;             |Comparador2Bits:inst2|    ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8|Comparador2Bits:inst2         ;              ;
+;       |MenorQue:inst5|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|MenorQue:inst5                                                      ;              ;
+;       |aequalsb:inst3|                 ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FinalULAULA|ULA:inst|aequalsb:inst3                                                      ;              ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri May 05 12:13:00 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ULAULA -c ULAULA
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Found 1 design units, including 1 entities, in source file diagrams/displayunidade.bdf
+    Info: Found entity 1: DisplayUnidade
+Info: Found 1 design units, including 1 entities, in source file diagrams/comparador2bits.bdf
+    Info: Found entity 1: Comparador2Bits
+Info: Found 1 design units, including 1 entities, in source file diagrams/complementodedois.bdf
+    Info: Found entity 1: ComplementoDeDois
+Info: Found 1 design units, including 1 entities, in source file diagrams/a and b.bdf
+    Info: Found entity 1: A AND B
+Info: Found 1 design units, including 1 entities, in source file diagrams/teste.bdf
+    Info: Found entity 1: teste
+Info: Found 1 design units, including 1 entities, in source file diagrams/ab.bdf
+    Info: Found entity 1: AB
+Info: Found 1 design units, including 1 entities, in source file diagrams/axorb.bdf
+    Info: Found entity 1: AXORB
+Info: Found 1 design units, including 1 entities, in source file diagrams/5bitsaxorb.bdf
+    Info: Found entity 1: 5bitsAXORB
+Info: Found 1 design units, including 1 entities, in source file testes/5bitsxor.bdf
+    Info: Found entity 1: 5bitsXOR
+Info: Found 1 design units, including 1 entities, in source file diagrams/aequalsb.bdf
+    Info: Found entity 1: aequalsb
+Info: Found 1 design units, including 1 entities, in source file testes/5bitsaequalsb.bdf
+    Info: Found entity 1: 5bitsAequalsB
+Info: Found 1 design units, including 1 entities, in source file diagrams/displaydezena.bdf
+    Info: Found entity 1: DisplayDezena
+Info: Found 1 design units, including 1 entities, in source file testes/2bitscomparador.bdf
+    Info: Found entity 1: 2bitsComparador
+Info: Found 1 design units, including 1 entities, in source file testes/compdedois.bdf
+    Info: Found entity 1: CompDeDois
+Warning: Can't analyze file -- file Diagrams/AMaiorQueB.bdf is missing
+Info: Found 1 design units, including 1 entities, in source file diagrams/comparamagnitude.bdf
+    Info: Found entity 1: ComparaMagnitude
+Warning: Can't analyze file -- file Testes/ComparaMagnitude.bdf is missing
+Info: Found 1 design units, including 1 entities, in source file testes/comparador.bdf
+    Info: Found entity 1: Comparador
+Info: Found 1 design units, including 1 entities, in source file diagrams/barramento_default.bdf
+    Info: Found entity 1: barramento_default
+Info: Found 1 design units, including 1 entities, in source file diagrams/maiorque.bdf
+    Info: Found entity 1: MaiorQue
+Info: Found 1 design units, including 1 entities, in source file testes/amaiorqb.bdf
+    Info: Found entity 1: AmaiorqB
+Info: Found 1 design units, including 1 entities, in source file diagrams/menorque.bdf
+    Info: Found entity 1: MenorQue
+Info: Found 1 design units, including 1 entities, in source file diagrams/somadorcompleto.bdf
+    Info: Found entity 1: SomadorCompleto
+Info: Found 1 design units, including 1 entities, in source file testes/somacompleto.bdf
+    Info: Found entity 1: SomaCompleto
+Info: Found 1 design units, including 1 entities, in source file testes/display14segments.bdf
+    Info: Found entity 1: Display14Segments
+Info: Found 1 design units, including 1 entities, in source file diagrams/4bitsfulladder.bdf
+    Info: Found entity 1: 4BitsFullAdder
+Info: Found 1 design units, including 1 entities, in source file testes/adder4bits.bdf
+    Info: Found entity 1: Adder4Bits
+Info: Found 1 design units, including 1 entities, in source file diagrams/amaisb.bdf
+    Info: Found entity 1: AmaisB
+Info: Found 1 design units, including 1 entities, in source file diagrams/seletorcomplemento.bdf
+    Info: Found entity 1: SeletorComplemento
+Info: Found 1 design units, including 1 entities, in source file diagrams/mux2para1.bdf
+    Info: Found entity 1: Mux2para1
+Info: Found 1 design units, including 1 entities, in source file testes/aplusb.bdf
+    Info: Found entity 1: AplusB
+Info: Found 1 design units, including 1 entities, in source file diagrams/tratasinalsubtracao.bdf
+    Info: Found entity 1: TrataSinalSubtracao
+Info: Found 1 design units, including 1 entities, in source file diagrams/amenosb.bdf
+    Info: Found entity 1: AmenosB
+Info: Found 1 design units, including 1 entities, in source file diagrams/ula.bdf
+    Info: Found entity 1: ULA
+Info: Found 1 design units, including 1 entities, in source file diagrams/decodersoma.bdf
+    Info: Found entity 1: DecoderSoma
+Info: Found 1 design units, including 1 entities, in source file diagrams/decodersubtracao.bdf
+    Info: Found entity 1: DecoderSubtracao
+Info: Found 1 design units, including 1 entities, in source file diagrams/decodercomplemento.bdf
+    Info: Found entity 1: DecoderComplemento
+Info: Found 1 design units, including 1 entities, in source file diagrams/decodermaiorque.bdf
+    Info: Found entity 1: DecoderMaiorQue
+Info: Found 1 design units, including 1 entities, in source file diagrams/decoderxor.bdf
+    Info: Found entity 1: DecoderXor
+Info: Found 1 design units, including 1 entities, in source file diagrams/finalulaula.bdf
+    Info: Found entity 1: FinalULAULA
+Info: Found 1 design units, including 1 entities, in source file diagrams/decoderaandb.bdf
+    Info: Found entity 1: DecoderAandB
+Info: Found 1 design units, including 1 entities, in source file diagrams/display14.bdf
+    Info: Found entity 1: Display14
+Info: Elaborating entity "FinalULAULA" for the top level hierarchy
+Info: Elaborating entity "ULA" for hierarchy "ULA:inst"
+Info: Elaborating entity "MaiorQue" for hierarchy "ULA:inst|MaiorQue:inst4"
+Info: Elaborating entity "ComparaMagnitude" for hierarchy "ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8"
+Info: Elaborating entity "Comparador2Bits" for hierarchy "ULA:inst|MaiorQue:inst4|ComparaMagnitude:inst8|Comparador2Bits:inst3"
+Info: Elaborating entity "Mux2para1" for hierarchy "ULA:inst|MaiorQue:inst4|Mux2para1:inst14"
+Info: Elaborating entity "MenorQue" for hierarchy "ULA:inst|MenorQue:inst5"
+Info: Elaborating entity "aequalsb" for hierarchy "ULA:inst|aequalsb:inst3"
+Info: Elaborating entity "DecoderComplemento" for hierarchy "ULA:inst|DecoderComplemento:inst27"
+Info: Elaborating entity "ComplementoDeDois" for hierarchy "ULA:inst|ComplementoDeDois:inst2"
+Info: Elaborating entity "DecoderXor" for hierarchy "ULA:inst|DecoderXor:inst37"
+Warning: Block or symbol "NOT" of instance "inst" overlaps another block or symbol
+Info: Elaborating entity "5bitsAXORB" for hierarchy "ULA:inst|5bitsAXORB:inst8"
+Info: Elaborating entity "AXORB" for hierarchy "ULA:inst|5bitsAXORB:inst8|AXORB:inst4"
+Info: Elaborating entity "DecoderAandB" for hierarchy "ULA:inst|DecoderAandB:inst6"
+Warning: Block or symbol "NOT" of instance "inst" overlaps another block or symbol
+Info: Elaborating entity "AB" for hierarchy "ULA:inst|AB:inst7"
+Info: Elaborating entity "DecoderSubtracao" for hierarchy "ULA:inst|DecoderSubtracao:inst26"
+Info: Elaborating entity "AmenosB" for hierarchy "ULA:inst|AmenosB:inst1"
+Info: Elaborating entity "AmaisB" for hierarchy "ULA:inst|AmenosB:inst1|AmaisB:inst"
+Info: Elaborating entity "4BitsFullAdder" for hierarchy "ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst"
+Info: Elaborating entity "SomadorCompleto" for hierarchy "ULA:inst|AmenosB:inst1|AmaisB:inst|4BitsFullAdder:inst|SomadorCompleto:inst4"
+Info: Elaborating entity "SeletorComplemento" for hierarchy "ULA:inst|AmenosB:inst1|AmaisB:inst|SeletorComplemento:inst4"
+Info: Elaborating entity "DecoderSoma" for hierarchy "ULA:inst|DecoderSoma:inst25"
+Info: Elaborating entity "Display14" for hierarchy "Display14:inst3"
+Info: Elaborating entity "DisplayDezena" for hierarchy "Display14:inst3|DisplayDezena:inst"
+Warning: Pin "E" not connected
+Warning: Primitive "NOT" of instance "inst7" not used
+Info: Elaborating entity "DisplayUnidade" for hierarchy "Display14:inst3|DisplayUnidade:inst1"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "bDez" is stuck at GND
+    Warning (13410): Pin "INbDez" is stuck at GND
+    Warning (13410): Pin "INcDez" is stuck at GND
+    Warning (13410): Pin "INgDez" is stuck at VCC
+    Warning (13410): Pin "IN2bDez" is stuck at GND
+    Warning (13410): Pin "IN2cDez" is stuck at GND
+    Warning (13410): Pin "IN2gDez" is stuck at VCC
+Info: Timing-Driven Synthesis is running
+Warning: Ignored assignments for entity "5bitsXOR" -- entity does not exist in design
+    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity 5bitsXOR -section_id "Root Region" was ignored
+    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity 5bitsXOR -section_id "Root Region" was ignored
+Warning: Ignored assignments for entity "Comparador" -- entity does not exist in design
+    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity Comparador -section_id "Root Region" was ignored
+    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity Comparador -section_id "Root Region" was ignored
+Warning: Ignored assignments for entity "ULAULA" -- entity does not exist in design
+    Warning: Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity ULAULA -section_id "Root Region" was ignored
+    Warning: Assignment for entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity ULAULA -section_id "Root Region" was ignored
+Info: Implemented 210 device resources after synthesis - the final resource count might be different
+    Info: Implemented 13 input pins
+    Info: Implemented 51 output pins
+    Info: Implemented 146 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 225 megabytes
+    Info: Processing ended: Fri May 05 12:13:05 2017
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
+
+
